@@ -1,9 +1,14 @@
 /*console.log("Hola Juan!");*/
 
-const express = require('express');
+/*const express = require('express');*/
+require('dotenv').config();
 
-const app = express();
+const Server = require("./server");
 
-app.get('/', function (req, res) {res.send('Hola Juan'); });
+const server = new Server ();
 
-app.listen(3000);
+server.listen();
+
+/*const app = express();*/
+/*app.listen(3000);*/
+// localhost:3000
