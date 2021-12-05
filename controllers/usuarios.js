@@ -21,4 +21,5 @@ const usuariosDelete = (req = request, res = response) => {
 
 module.exports = {usuariosGet, usuariosPost, usuariosPut, usuariosDelete };
 
+/* */
 
