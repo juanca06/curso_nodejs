@@ -13,6 +13,7 @@ class Server {
 
 middlewares() {
     this.app.use(cors());
+    this.app.use(express.json());
 }
 
     routes() {
@@ -20,6 +21,7 @@ middlewares() {
 }
 
     listen() {
+    console.log("Iniciado servidor en puerto", this.port);
     this.app.listen(this.port);
     }
 
