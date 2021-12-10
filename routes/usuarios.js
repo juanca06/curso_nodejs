@@ -17,4 +17,3 @@ router.delete("/", usuariosDelete);
 router.post("/signin", usuarioSignin);
 
 module.exports = router;
-

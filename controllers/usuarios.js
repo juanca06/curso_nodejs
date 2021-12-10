@@ -90,9 +90,6 @@ const usuariosPut = async (req = request, res = response) => {
     }
 };
 
-
-
-
 const usuariosDelete = async (req = request, res = response) => {
     const {email} = req.query;
     
@@ -126,7 +123,7 @@ const usuarioSignin = async (req = request, res = response) =>{
 
         if (usuarios.length === 0) {
             res.status(404).json({ msg: `No se encontro el usuario ${email}.` });
-            return
+            return;
         }
 
         const passwordValido = bcryptjs.compareSync(password, usuarios[0].password);
