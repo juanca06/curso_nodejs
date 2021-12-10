@@ -95,3 +95,4 @@ const usuariosDelete = async (req = request, res = response) => {
 };
 
 module.exports = {usuariosGet, usuariosPost, usuariosPut, usuariosDelete };
+//
